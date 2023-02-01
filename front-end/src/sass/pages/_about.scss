@@ -11,24 +11,22 @@
         }
     }
     .top-parent__modifications{
-        margin-top: 0;
+        height: 100%;
     }
     .main-about{
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         letter-spacing: 0.2rem;
-        padding-bottom: 10px;
+        margin-bottom: 30px;
 
-            @include tablet{
-                padding-bottom: 0px;
-                height: 400px;
-                width: 80%;
+            h2{
+                margin: 15px 0;
             }
-            @include ordi {
-                height: 665px;
+            p{
+                width: 90%;
             }
     }
 }

@@ -2,7 +2,6 @@
 @import '../utils/mixins';
 
 main{
-    gap: 80px;
     display: flex;
     flex-direction: column;
     & .text-main__page{
@@ -28,6 +27,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: justify;
         & h2 {
                 font-weight: 700;
                 margin: 15px 0;
