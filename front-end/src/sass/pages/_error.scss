@@ -1,0 +1,20 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+.parent {
+    display: contents;
+        & .main-error {
+            height: 350px;
+            a {
+                color: $black-color;
+                & .btn-error {
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    font-weight: 700;
+                    border: 1px solid $black-color;
+                    @include shadow;
+                }
+            }
+        }
+}

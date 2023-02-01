@@ -1,0 +1,9 @@
+footer p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+
+    @include tablet {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,50 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+
+
+.parent-connect{
+    & .top-parent__modifications{
+        margin-top: 0;
+        & .login-signup{
+            height: 290px; //350
+            //border: solid;
+            & .connect-boxes{
+                height: 100%;
+                form{
+                    height: 100%;
+                   // border: solid;
+                    h2{
+                        text-align: center;
+                        font-weight: 700;
+                        //margin: 5px 0;
+                    }
+                    input, .btn{
+                        background-color: $white-color;
+                        width: 100%;
+                        padding: 12px;
+                        //border: none;
+                        border-radius: 4px;
+                        margin: 5px 0;
+                        opacity: 0.85;
+                        display: inline-block;
+                        font-size: 17px;
+                        line-height: 20px;
+                            input:hover, .btn:hover {
+                                opacity: 1;
+                            }
+                    }
+                    & .btn-login {
+                        background-color: $green-cyan;
+                        color: $white-color;
+                        cursor: pointer;
+                    }
+                    & .btn-login:hover {
+                        background-color: $fruit-salad;
+                    }
+                }
+            }
+        }
+
+    }
+}

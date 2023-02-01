@@ -1,0 +1,23 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+@import '../base/footer_typograpy';
+
+footer {
+    color: $black-color;
+    text-align: center;
+    padding: 20px;
+    @include box-shadow;
+
+    & img {
+        object-fit: cover;
+        width: 19%;
+
+        @include tablet {
+            width: 9%;
+        }
+
+        @include ordi {
+            width: 4%;
+        }
+    }
+}

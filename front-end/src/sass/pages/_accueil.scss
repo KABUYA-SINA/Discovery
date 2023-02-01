@@ -1,0 +1,40 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+main{
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    & .text-main__page{
+        text-align: center;
+        font-weight: 700;
+        margin: 20px 0px;
+        color: $blue-gray;
+        @include tablet{
+            margin: 40px 0px;
+        }
+
+        & h1{
+            font-size: 25px;
+            letter-spacing: 1.4rem;
+        }
+        & span{
+            font-size: 10px;
+            letter-spacing: .2rem;
+        }
+    }
+    & .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h2 {
+                font-weight: 700;
+                margin: 15px 0;
+            }
+
+        & p{
+            width: 90%;
+        }
+    }
+}

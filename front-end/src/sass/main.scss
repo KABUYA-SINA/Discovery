@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/header_typography";
+@import "./base/banner";
+@import "./base/mainIndex";
+@import "./base/footer_typograpy";
+
+@import "./components/keyframes";
+
+
+@import "./layout/header";
+@import "./layout/container";
+@import "./layout/footer";
+
+@import "./pages/about";
+@import "./pages/connect";
+@import "./pages/banner";
+@import "./pages/error";
+@import "./pages/home";
+@import "./pages/accueil";
+@import "./pages/singlepage";
+@import "./pages/mainIndex";
+
+@import "./pages/auth/login";
+@import "./pages/auth/signup";
