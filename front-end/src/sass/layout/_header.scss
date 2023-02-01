@@ -49,8 +49,9 @@ nav {
             padding: 5px;
             transition: .2s;
             letter-spacing: 1.3px;
-            background-color: $blue-light;
+            background-color: $blue-gray;
             @include shadow;
+            @include border-radius;
             cursor: pointer;
 
                 @include tablet {
@@ -60,7 +61,6 @@ nav {
                 color: $black-color;
                 border-width: 2px;
                 box-shadow: 0px 0px 0px 2.5px $white-color, 0px 0px 0px 5px $fourth-color;
-                background: $blue-light;
                 animation: pulse 1s infinite;
                 transition: .3s;
             }
