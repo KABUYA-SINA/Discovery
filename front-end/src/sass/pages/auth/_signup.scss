@@ -3,24 +3,25 @@
 
 
 .parent-connect {
+    nav li  {
+        background-color: $blue-gray;
+    }
+    & .banner-parent{
+        @include ordi{
+            display: none;
+        }
+    }
     & .top-parent__modifications {
         margin-top: 0;
         margin-bottom: 50px;
-        // @include tablet{
-        //     margin-bottom: 0;
-        // }
 
         & .login-signup {
-            height: 310px; //350 //290
-
-            //border: solid;
+            height: 310px;
             & .connect-boxes {
                 height: 100%;
 
                 form {
                     height: 100%;
-
-                    // border: solid;
                     h2 {
                         text-align: center;
                         font-weight: 700;
@@ -32,7 +33,6 @@
                         background-color: $white-color;
                         width: 100%;
                         padding: 12px;
-                        //border: none;
                         border-radius: 4px;
                         margin: 5px 0;
                         opacity: 0.85;

@@ -171,10 +171,6 @@ footer img {
   }
 }
 
-.content nav ul li {
-  box-shadow: 0px 0px 0px 2.5px #FFFFFF, 0px 0px 0px 5px #6699CC;
-  border-radius: 10px;
-}
 .content nav ul li:hover {
   color: #FFFFFF;
   background: #002155;
@@ -515,23 +511,26 @@ main .text p {
   }
 }
 
-.parent-connect .top-parent__modifications {
+.login-content nav ul li {
+  background-color: #04AA6D;
+}
+.login-content .top-parent__modifications {
   margin-top: 0;
 }
-.parent-connect .top-parent__modifications .login-signup {
+.login-content .top-parent__modifications .login-signup {
   height: 290px;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes {
+.login-content .top-parent__modifications .login-signup .connect-boxes {
   height: 100%;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form {
+.login-content .top-parent__modifications .login-signup .connect-boxes form {
   height: 100%;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form h2 {
+.login-content .top-parent__modifications .login-signup .connect-boxes form h2 {
   text-align: center;
   font-weight: 700;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form input, .parent-connect .top-parent__modifications .login-signup .connect-boxes form .btn {
+.login-content .top-parent__modifications .login-signup .connect-boxes form input, .login-content .top-parent__modifications .login-signup .connect-boxes form .btn {
   background-color: #FFFFFF;
   width: 100%;
   padding: 12px;
@@ -542,18 +541,26 @@ main .text p {
   font-size: 17px;
   line-height: 20px;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form input input:hover, .parent-connect .top-parent__modifications .login-signup .connect-boxes form input .btn:hover, .parent-connect .top-parent__modifications .login-signup .connect-boxes form .btn input:hover, .parent-connect .top-parent__modifications .login-signup .connect-boxes form .btn .btn:hover {
+.login-content .top-parent__modifications .login-signup .connect-boxes form input input:hover, .login-content .top-parent__modifications .login-signup .connect-boxes form input .btn:hover, .login-content .top-parent__modifications .login-signup .connect-boxes form .btn input:hover, .login-content .top-parent__modifications .login-signup .connect-boxes form .btn .btn:hover {
   opacity: 1;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form .btn-login {
+.login-content .top-parent__modifications .login-signup .connect-boxes form .btn-login {
   background-color: #04AA6D;
   color: #FFFFFF;
   cursor: pointer;
 }
-.parent-connect .top-parent__modifications .login-signup .connect-boxes form .btn-login:hover {
+.login-content .top-parent__modifications .login-signup .connect-boxes form .btn-login:hover {
   background-color: #45a049;
 }
 
+.parent-connect nav li {
+  background-color: #6699CC;
+}
+@media screen and (min-width: 1440px) {
+  .parent-connect .banner-parent {
+    display: none;
+  }
+}
 .parent-connect .top-parent__modifications {
   margin-top: 0;
   margin-bottom: 50px;

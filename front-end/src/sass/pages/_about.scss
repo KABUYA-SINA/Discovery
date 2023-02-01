@@ -4,8 +4,6 @@
 
 .content{
     nav ul li{
-        box-shadow: 0px 0px 0px 2.5px $white-color, 0px 0px 0px 5px $blue-gray;
-        border-radius: 10px;
         &:hover{
             color: $white-color;
             background: $fourth-color;

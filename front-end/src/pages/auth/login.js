@@ -8,7 +8,7 @@ import '../../sass/pages/auth/_login.scss'
 function login () {
     return (
         <React.Fragment>
-            <div className='parent-connect'>
+            <div className='login-content'>
                 <Header />
                 <main>
                     <Banner />
