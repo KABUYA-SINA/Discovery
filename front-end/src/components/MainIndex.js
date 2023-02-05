@@ -4,6 +4,7 @@ import { useState } from 'react';
 import '../sass/pages/_mainIndex.scss';
 
 
+
 const MainIndex = () => {
     const [ indexlist, setIndexList ] = useState(indexList)
 

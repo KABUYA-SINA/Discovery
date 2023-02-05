@@ -7,7 +7,7 @@
         color: $white-color;
         background-color: $black-color;
         &:hover{
-            box-shadow: 0px 0px 0px 2.5px $white-color, 0px 0px 0px 5px $black-color;
+           box-shadow: map-get($box-shadow, about);
         }
     }
     .top-parent__modifications{
@@ -20,12 +20,14 @@
         flex-direction: column;
         text-align: justify;
         letter-spacing: 0.2rem;
-        margin-bottom: 30px;
+        margin-bottom: nth($margin, 4) + 10;
 
             h2{
-                margin: 15px 0;
+                font-size: 24px;
+                margin: nth($margin, 3) 0;
             }
             p{
+                font-size: 16px;
                 width: 90%;
             }
     }

@@ -6,7 +6,7 @@
     nav li  {
         background-color: $blue-gray;
         &:hover{
-            box-shadow: 0px 0px 0px 2.5px $white-color, 0px 0px 0px 5px $blue-gray;
+            box-shadow: map-get($box-shadow, signup);
         }
     }
     & .banner-parent{
@@ -15,8 +15,7 @@
         }
     }
     & .top-parent__modifications {
-        margin-top: 0;
-        margin-bottom: 50px;
+        @include margin-top-bottom;
 
         & .login-signup {
             height: 310px;
@@ -28,19 +27,14 @@
                     h2 {
                         text-align: center;
                         font-weight: 700;
-                        margin: 15px 0;  //5px 0
+                        font-size: 24px;
+                        margin: nth($margin, 3) 0;
                     }
 
                     input,
                     .btn {
-                        background-color: $white-color;
-                        width: 100%;
-                        padding: 12px;
-                        border-radius: 4px;
-                        margin: 5px 0;
-                        opacity: 0.85;
-                        display: inline-block;
-                        font-size: 17px;
+                        @include input-btn-login-sign;
+                        font-size: 16px;
                         line-height: 20px;
 
                         input:hover,

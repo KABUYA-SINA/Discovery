@@ -19,3 +19,19 @@
 @mixin border-radius{
     border-radius: 10px;
 }
+
+@mixin margin-top-bottom{
+    margin: nth($margin, 4) + 30  0;
+}
+
+@mixin input-btn-login-sign{
+    background-color: $white-color;
+    width: 100%;
+    padding: nth($padding, 2) + 2;
+    border-radius: 4px;
+    margin: nth($margin, 1) 0;
+    opacity: 0.85;
+    display: inline-block;
+}
+
+

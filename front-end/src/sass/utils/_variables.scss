@@ -15,11 +15,29 @@ $gray-light: #fafafa;
 $green-cyan: #04AA6D;
 $fruit-salad: #45a049;
 $sea-cliff: #a8c4df;
-$combi: #0021556e; 
 
 //Breakpoints
-
 $breakpoints: (
     tablet: 768px,
     ordi: 1440px
 );
+
+//Others variables
+$margin: 5px 10px  15px  20px;
+$padding: 5px 10px 15px 20px;
+
+//Maps
+$box-shadow : (
+    header: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $fourth-color), 
+    about: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $black-color),
+    connect: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $sea-cliff),
+    btnConnect: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $fourth-color),
+    login: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $fruit-salad),
+    signup: (0px 0px 0px 2.5px $white-color,
+    0px 0px 0px 5px $blue-gray)
+)

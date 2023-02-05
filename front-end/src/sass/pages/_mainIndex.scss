@@ -5,13 +5,11 @@
 
 .top-parent__modifications{
 
-
     @include tablet{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin: nth($margin, 4) * 3 0;
     }
 
     .main-parent{
@@ -38,11 +36,11 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
                 @include tablet{
-                    height: 265px; //325
+                    height: 265px;
                     border-radius: 0;
                 }
                 @include ordi{
-                    height: 220px; //260
+                    height: 220px;
                 }
         }
         & .childs{
@@ -72,6 +70,7 @@
                 }
             }
             & .span-text{
+                font-size: 12px;
                 font-weight: 700;
                 width: 100%;
                 @include shadow;
@@ -79,6 +78,7 @@
                 border-bottom-right-radius: 10px;
                 @include tablet{
                     border-radius: 0;
+                    font-size: 16px;
                 }
             }
         }
