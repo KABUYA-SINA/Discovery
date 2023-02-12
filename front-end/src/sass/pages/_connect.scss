@@ -12,12 +12,6 @@
 
         }
     }
-    & .banner-parent{
-
-        @include ordi{
-            display: none;
-        }
-    }
     & .top-parent__modifications{
         & .main-connect{
             background-color: $white-color;

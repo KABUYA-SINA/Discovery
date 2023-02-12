@@ -10,7 +10,7 @@ function About ()  {
             <div className='content'>
                 <Header />
                 <main>
-                    <Banner />
+                    <Banner firstchild={false} secondchild={true}/>
                     <div className='top-parent__modifications'>
                         <div className='main-about'>
                             <h2>ABOUT US</h2>
