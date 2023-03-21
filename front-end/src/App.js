@@ -7,7 +7,6 @@ import  Error from './pages/Error'
 import  ConnectPages  from './pages/Connect'
 import Login from './pages/auth/login'
 import Signup from './pages/auth/signup'
-import './App.css'
 
 
 

@@ -1,31 +1,27 @@
-import soleil from '../assets/images-components/soleil couchant.png'
-import feuille from "../assets/images-components/feuille d'arbres.png"
-import ecolo from '../assets/images-components/batiment herbe.png'
-import buddha from '../assets/images-components/image buddha.png'
 
 export const bannerList = [
     {
         id: '1ab',
-        name: 'soleil',
-        image: soleil,
+        name: 'soleil couchant',
+        image: "/bannerlistImages/soleil_couchant.jpg",
         alt: 'soleil couchant'
     },
     {
         id: '2ab',
-        name: 'feuille',
-        image: feuille,
+        name: 'feuilles d\'arbres',
+        image: "/bannerlistImages/feuilles.jpg",
         alt: "feuille d'arbre"
     },
     {
         id: '3ab',
-        name: 'batiment',
-        image: ecolo,
+        name: 'batiment en herbe',
+        image: "/bannerlistImages/batiment_herbe.jpg",
         alt: 'batiment en herbe'
     },
     {
         id: '4ab',
-        name: 'buddha',
-        image: buddha,
+        name: 'image de buddha',
+        image: "/bannerlistImages/image_buddha.jpg",
         alt: 'image de buddha'
     }
 ]

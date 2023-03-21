@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <img src={ Logo } alt='icon de notre agence discovery' />
-            {/* <p>©2023 Discovery. All rights reserved</p> */}
+            <p>©2023 Discovery. All rights reserved - KrisCartel HOUSE</p>
         </footer>
     )
 }

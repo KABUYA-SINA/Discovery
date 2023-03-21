@@ -1,23 +1,18 @@
 import React from 'react';
 import BannerIntroduction from './BannerIntroduction';
-import BannerImage from './BannerImage';
+import { bannerList } from '../datas/bannerList';
 import '../sass/pages/_banner.scss'
+import Slider from './Slider';
 
 
-const Banner = ({ firstchild=true, secondchild=false}) => {
 
-    if(firstchild){
-       return <BannerIntroduction />
-    }else if(!secondchild){
-        return <BannerImage />
-    }else{
-        return (
-            <React.Fragment>
-                <BannerIntroduction />
-                <BannerImage />
-            </React.Fragment>
-        )
-    }
-};
+function Banner(){
+    return(
+        <div className='banner-parent'>
+            <BannerIntroduction />
+            <Slider images={bannerList} />
+        </div>
+    )
+}
 
 export default Banner;
