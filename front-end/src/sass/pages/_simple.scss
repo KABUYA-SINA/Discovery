@@ -1,0 +1,23 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+section{
+    width: 100%;
+    text-align: center;
+    width: 40%;
+    @include tablet{
+        width: 30%;
+    }
+    @include ordi{
+        width: 15%;
+    }
+    .simple-text {
+        font-size: 30px;
+        font-weight: 700;
+        height: 50px;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        & .Typewriter{
+            color: $white-color;
+        }
+    }
+}

@@ -4,24 +4,24 @@
 
 .parent {
     display: contents;
-        & .main-error {
-            height: 350px;
-            h1{
-                font-size: 32px;
-            }
-            p{
+    & .main-error {
+        height: 350px;
+        h1{
+            font-size: 32px;
+        }
+        p{
+            font-size: 16px;
+        }
+        a {
+            color: $black-color;
+            & .btn-error {
+                cursor: pointer;
+                padding: nth($padding, 1) 10px;
                 font-size: 16px;
-            }
-            a {
-                color: $black-color;
-                & .btn-error {
-                    cursor: pointer;
-                    padding: nth($padding, 1) 10px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    border: 1px solid $black-color;
-                    @include shadow;
-                }
+                font-weight: 700;
+                border: 1px solid $black-color;
+                @include shadow;
             }
         }
+    }
 }

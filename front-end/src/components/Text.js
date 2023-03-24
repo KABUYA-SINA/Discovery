@@ -1,13 +1,14 @@
-import React from 'react';
 import { useState } from 'react';
+import '../sass/pages/_text.scss'
 
-function Text  ( { title, comment })  {
-    const [ text, setText ] = useState(true)
-    const AllText = (<div className='text'><h2>{ title }</h2> <p>{ comment }</p></div>)
+function Text ({title, comment})  {
+    const [text, setText ] = useState(true)
+    const TextTitle = title ?(<h2>{title}</h2>) : ''
     return (
-        <React.Fragment>
-            { text && AllText}
-        </React.Fragment>
+        <div className='text'>
+            {text && TextTitle}
+            <p>{ comment }</p>
+        </div>
     );
 };
 

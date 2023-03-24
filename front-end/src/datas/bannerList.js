@@ -2,26 +2,26 @@
 export const bannerList = [
     {
         id: '1ab',
-        name: 'soleil couchant',
-        image: "/bannerlistImages/soleil_couchant.jpg",
+        name: 'sunset',
+        image: "/bannerlistImages/sunset.png",
         alt: 'soleil couchant'
     },
     {
         id: '2ab',
-        name: 'feuilles d\'arbres',
-        image: "/bannerlistImages/feuilles.jpg",
-        alt: "feuille d'arbre"
+        name: 'Design',
+        image: "/bannerlistImages/house.png",
+        alt: "Musée au design futuriste"
     },
     {
         id: '3ab',
-        name: 'batiment en herbe',
-        image: "/bannerlistImages/batiment_herbe.jpg",
-        alt: 'batiment en herbe'
+        name: 'Boat',
+        image: "/bannerlistImages/boat.png",
+        alt: 'Bateau de caraïbe'
     },
     {
         id: '4ab',
-        name: 'image de buddha',
-        image: "/bannerlistImages/image_buddha.jpg",
-        alt: 'image de buddha'
+        name: 'Beach',
+        image: "/bannerlistImages/beach.png",
+        alt: 'Douces vagues sur la plage pour se relaxer'
     }
 ]

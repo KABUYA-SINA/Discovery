@@ -4,40 +4,4 @@
 main{
     display: flex;
     flex-direction: column;
-    & .text-main__page{
-        text-align: center;
-        font-weight: 700;
-        margin: nth($margin, 4) 0;
-        color: $blue-gray;
-        @include tablet{
-            margin: nth($margin, 4) + 20 0;
-        }
-
-        & h1{
-            font-size: 25px;
-            letter-spacing: 1.4rem;
-        }
-        & span{
-            font-size: 12px;
-            letter-spacing: .2rem;
-        }
-    }
-    & .text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        & h2 {
-                font-size: 24px;
-                font-weight: 700;
-                margin: nth($margin, 3) 0;
-                text-align: center;
-            }
-
-        & p{
-            text-align: justify;
-            font-size: 16px;
-            width: 90%;
-        }
-    }
 }

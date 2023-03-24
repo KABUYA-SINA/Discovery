@@ -8,4 +8,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    & .text-main__page {
+        text-align: center;
+        font-weight: 700;
+        margin: nth($margin, 4) 0;
+        color: $blue-gray;
+        position: absolute;
+        z-index: 1;
+
+        @include tablet {
+            margin: nth($margin, 4) + 20 0;
+        }
+
+        & h1 {
+            font-size: 25px;
+            letter-spacing: 1.4rem;
+        }
+
+        & span {
+            font-size: 12px;
+            letter-spacing: .2rem;
+        }
+    }
 }

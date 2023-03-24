@@ -12,17 +12,15 @@ function connect () {
                 <Header />
                 <main>
                     <Banner />
-                    <div className='top-parent__modifications'>
-                        <div className='main-connect main-parent'>
-                            <div className='connect-boxes'>
-                                <Link  to={'/login'}>
-                                    <span className='btn-connect'>LOGIN</span>
-                                </Link>
-                                <p>OR</p>
-                                 <Link  to={'/signup'}>
-                                    <span className='btn-connect'>SIGNUP</span>
-                                </Link>
-                            </div>
+                    <div className='main-connect'>
+                        <div className='connect-boxes'>
+                            <Link  to={'/login'}>
+                                <span className='btn-connect'>LOGIN</span>
+                            </Link>
+                            <p>OR</p>
+                                <Link  to={'/signup'}>
+                                <span className='btn-connect'>SIGNUP</span>
+                            </Link>
                         </div>
                     </div>
                 </main>

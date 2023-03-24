@@ -9,28 +9,31 @@
             box-shadow: map-get($box-shadow, signup);
         }
     }
-    & .banner-parent{
-        @include ordi{
-            display: none;
-        }
-    }
-    & .top-parent__modifications {
+    & .top-parent {
         @include margin-top-bottom;
-
+        @include all-page__conexions;
         & .login-signup {
-            height: 310px;
+            height: 350px;
+            width: 100%;
+            background-color: $gray-light;
+                @include tablet {
+                    width: 80%;
+                }
             & .connect-boxes {
                 height: 100%;
-
+                @include all-page__conexions;
                 form {
                     height: 100%;
+                    width: 80%;
+                        @include tablet {
+                            width: 50%;
+                        }
                     h2 {
                         text-align: center;
                         font-weight: 700;
                         font-size: 24px;
                         margin: nth($margin, 3) 0;
                     }
-
                     input,
                     .btn {
                         @include input-btn-login-sign;
@@ -42,13 +45,11 @@
                             opacity: 1;
                         }
                     }
-
                     .btn-signup {
                         background-color: $blue-gray;
                         color: $white-color;
                         cursor: pointer;
                     }
-
                     .btn-signup:hover {
                         background-color: $fourth-color;
                     }

@@ -3,7 +3,7 @@
 @import '../base/footer_typograpy';
 
 footer {
-    color: $black-color;
+    color: $blue-gray;
     text-align: center;
     padding: nth($padding, 4);
     @include box-shadow;

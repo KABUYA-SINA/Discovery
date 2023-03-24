@@ -4,14 +4,13 @@
 
 .slider-show{
     display: flex;
-    height: 370px;
+    height: 450px;
     width: 100%;
     @include tablet{
-        height: 550px;
+        height: 590px;
     }
     @include ordi{
-        height: 650px;
-        // max-width: 800px;
+        height: 720px;
     }
     & .slider--wrapper{
         position: relative;
@@ -41,7 +40,7 @@
                 padding: nth($padding, 4)*2 30px;
                 display: flex;
                 align-items: flex-end;
-                justify-content: end;
+                justify-content: flex-end;
                 & .slider_title{
                     color: $white-color;
                 }

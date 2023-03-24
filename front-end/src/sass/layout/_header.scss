@@ -8,7 +8,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: nth($padding, 3);
-    @include box-shadow;
+    @include ordi{
+        padding: nth($padding, 4)+5;
+    }
 
     img {
         object-fit: cover;
@@ -37,11 +39,17 @@ nav {
     & ul {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         width: 100%;
             @include tablet{
                 width: 40%;
             }
+        & > a{
+            padding-left: nth($padding, 4)+10;
+            @include ordi{
+                padding-left: nth($padding, 4)*2;
+            }
+        }
 
         & li {
             color: $fourth-color;

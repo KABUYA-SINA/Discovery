@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer'
-
 import '../../sass/pages/auth/_signup.scss'
 
 
@@ -15,8 +14,8 @@ function signup () {
                 <Header />
                 <main>
                     <Banner />
-                     <div className='top-parent__modifications'>
-                        <div className='login-signup main-parent'>
+                     <div className='top-parent'>
+                        <div className='login-signup'>
                             <div className='connect-boxes'>
                                 <form action='' >
                                     <h2>SIGNUP</h2>

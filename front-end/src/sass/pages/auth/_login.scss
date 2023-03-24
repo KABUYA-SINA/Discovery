@@ -1,8 +1,6 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-
-
 .login-content {
     nav ul li {
         background-color: $green-cyan;
@@ -10,20 +8,25 @@
             box-shadow: map-get($box-shadow, login);
         }
     }
-    & .banner-parent {
-        @include ordi {
-            display: none;
-        }
-    }
-    & .top-parent__modifications{
+    & .top-parent{
         @include margin-top-bottom;
-
+        @include all-page__conexions;
         & .login-signup{
-            height: 290px;
+            height: 350px;
+            background-color: $gray-light;
+            width: 100%;
+                @include tablet{
+                    width: 80%;
+                }
             & .connect-boxes{
                 height: 100%;
+                @include all-page__conexions;
                 form{
                     height: 100%;
+                    width: 80%;
+                    @include tablet{
+                        width: 50%;
+                    }
                     h2{
                         text-align: center;
                         font-weight: 700;

@@ -34,4 +34,9 @@
     display: inline-block;
 }
 
+@mixin all-page__conexions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
