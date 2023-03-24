@@ -6,7 +6,8 @@ function SimpleText() {
     <div className='simple-text'>
         <Typewriter
             options={{
-                strings: ['Hello', 'Hola', 'Bonjour', 'Ciao', 'Mboté', 'Szia', 'Hallo', 'Hej', 'Tere', 'Yasou', 'Hei', 'Hej', 'salut' ],
+                strings: ['Hello', 'Hola', 'Bonjour', 'Ciao', 'Mboté', 'Szia', 'Guten Tag', 'Hej', 'Tere', 'Yasou', 'Hei',
+                 'Hej', 'Salut', 'Salam', 'bonjou', 'goeiedag', 'Houje' ],
                 autoStart: true,
                 loop: true,
                 delay: 100,
