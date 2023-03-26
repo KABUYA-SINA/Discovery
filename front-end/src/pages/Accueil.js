@@ -1,21 +1,27 @@
-import React from 'react'
+import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Text from '../components/Text'
+import Text from '../components/Text';
 import MainIndex from '../components/MainIndex';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 import { ErrorBoundary } from 'react-error-boundary';
 import  ErrorBoundaryData from './ErrorBoundary';
-import '../sass/layout/_container.scss'
-import '../sass/base/_base.scss'
-import '../sass/pages/_accueil.scss'
+import {motion} from 'framer-motion';
+import '../sass/layout/_container.scss';
+import '../sass/base/_base.scss';
+import '../sass/pages/_accueil.scss';
 
 
 
 function Accueil (){
     return (
         <React.Fragment>
-            <div className='container'>
+            <motion.div
+                className='container'
+                initial={{width: 0}}
+                animate={{width: '100%'}}
+                exit={{x: window.innerWidth, transition:{ duration: 0.5}}}
+                >
                 <Header />
                 <main>
                     <Banner firstchild={false} secondchild={true}/>
@@ -24,7 +30,7 @@ function Accueil (){
                         <MainIndex />
                     </ErrorBoundary>
                 </main>
-            </div>
+            </motion.div>
             <Footer />
         </React.Fragment>
     );

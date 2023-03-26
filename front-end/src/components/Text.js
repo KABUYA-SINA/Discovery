@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../sass/pages/_text.scss'
+import '../sass/pages/_text.scss';
 
 function Text ({title, comment})  {
     const [text, setText ] = useState(true)
@@ -7,7 +7,7 @@ function Text ({title, comment})  {
     return (
         <div className='text'>
             {text && TextTitle}
-            <p>{ comment }</p>
+            <p>{comment}</p>
         </div>
     );
 };

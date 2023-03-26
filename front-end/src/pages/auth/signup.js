@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
-import Footer from '../../components/Footer'
-import '../../sass/pages/auth/_signup.scss'
+import Footer from '../../components/Footer';
+import {motion} from 'framer-motion';
+import '../../sass/pages/auth/_signup.scss';
 
 
 
@@ -10,7 +11,12 @@ import '../../sass/pages/auth/_signup.scss'
 function signup () {
     return (
         <React.Fragment>
-            <div className='parent-connect'>
+            <motion.div
+                className='parent-connect'
+                initial={{width: 0}}
+                animate={{width: '100%'}}
+                exit={{x: window.innerWidth, transition:{ duration: 0.4}}}
+                >
                 <Header />
                 <main>
                     <Banner />
@@ -28,7 +34,7 @@ function signup () {
                         </div>
                     </div>
                 </main>
-            </div>
+            </motion.div>
             <Footer />
         </React.Fragment>
     );

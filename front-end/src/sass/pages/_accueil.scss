@@ -1,7 +1,9 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+@import '../components/keyframes';
 
 main{
     display: flex;
     flex-direction: column;
+    animation: fade-in-top .7s 250ms ease-in-out both;
 }

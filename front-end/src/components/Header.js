@@ -1,13 +1,13 @@
-import { NavLink, Link } from 'react-router-dom'
-import Logo from '../assets/images/logo.png'
-import '../sass/layout/_header.scss'
-import '../sass/base/_header_typography.scss'
+import { NavLink, Link } from 'react-router-dom';
+import Logo from '../assets/images/logo.png';
+import '../sass/layout/_header.scss';
+import '../sass/base/_header_typography.scss';
 
 const Header = () => {
     return (
         <header>
             <Link to={'/'}>
-                <img src={ Logo } alt="logo de l'agence discovery" />
+                <img src={Logo} alt="logo de l'agence discovery" />
             </Link>
             <nav>
                 <ul>

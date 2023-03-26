@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/pages/_banner.scss'
+import '../sass/pages/_banner.scss';
 
 function  BannerIntroduction ()  {
     return (

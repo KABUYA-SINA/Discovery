@@ -6,17 +6,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     & h2 {
         font-size: 24px;
         font-weight: 700;
         margin: nth($margin, 3) 0;
         text-align: center;
     }
-
     & p {
         text-align: justify;
         font-size: 16px;
+        font-weight: 300;
         width: 90%;
     }
 }

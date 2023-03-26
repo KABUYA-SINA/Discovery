@@ -1,8 +1,9 @@
 import React from 'react';
 import BannerIntroduction from './BannerIntroduction';
 import { bannerList } from '../datas/bannerList';
-import '../sass/pages/_banner.scss'
 import Slider from './Slider';
+import '../sass/pages/_banner.scss';
+
 
 
 

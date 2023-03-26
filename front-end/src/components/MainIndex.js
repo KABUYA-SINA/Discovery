@@ -5,10 +5,8 @@ import SimpleText from './SimpleText';
 import Text from './Text';
 import '../sass/pages/_mainIndex.scss';
 
-
-
 const MainIndex = () => {
-    const [ indexlist, setIndexList ] = useState(indexList)
+    const [indexlist, setIndexList] = useState(indexList)
     const firstArrayImages = indexlist.slice(0, 6)
     const secondArrayImages = indexlist.slice(6, 12)
     return (

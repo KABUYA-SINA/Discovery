@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import '../sass/pages/_slider.scss'
-
+import '../sass/pages/_slider.scss';
 
 function Slider ({images})  {
     const [currentIndex, SetCurrentIndex] = useState(0)

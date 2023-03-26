@@ -1,5 +1,6 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import '../sass/pages/_error.scss';
 
 function ErrorBoundary  () {
@@ -9,11 +10,16 @@ function ErrorBoundary  () {
         navigate.push('/')
    }
     return (
-         <div className='parent'>
+         <motion.div
+            className='top-parent'
+            initial={{width: 0}}
+            animate={{width: '100%'}}
+            exit={{x: window.innerWidth, transition:{ duration: 0.3}}}
+            >
             <div className='content'>
                 <main>
-                    <div className='top-parent__modifications'>
-                        <div className='main-error main-about'>
+                    <div className='main-error'>
+                        <div className='main-error__pages'>
                                 <h1>500</h1>
                                 <p>
                                    Something went wrong with the server.
@@ -25,7 +31,7 @@ function ErrorBoundary  () {
                     </div>
                 </main>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

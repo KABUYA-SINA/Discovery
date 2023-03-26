@@ -1,13 +1,19 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
-import Footer from '../../components/Footer'
+import Footer from '../../components/Footer';
+import {motion} from 'framer-motion';
 import '../../sass/pages/auth/_login.scss'
 
 function login () {
     return (
         <React.Fragment>
-            <div className='login-content'>
+            <motion.div
+                className='login-content'
+                initial={{width: 0}}
+                animate={{width: '100%'}}
+                exit={{x: window.innerWidth, transition:{ duration: 0.4}}}
+                >
                 <Header />
                 <main>
                     <Banner />
@@ -24,7 +30,7 @@ function login () {
                         </div>
                     </div>
                 </main>
-            </div>
+            </motion.div>
             <Footer />
         </React.Fragment>
     );

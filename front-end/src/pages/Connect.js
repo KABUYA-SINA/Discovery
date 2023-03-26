@@ -2,13 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer'
-import '../sass/pages/_connect.scss'
+import Footer from '../components/Footer';
+import {motion} from 'framer-motion';
+import '../sass/pages/_connect.scss';
 
 function connect () {
     return (
         <React.Fragment>
-            <div className='connect'>
+            <motion.div
+                className='connect'
+                initial={{width: 0}}
+                animate={{width: '100%'}}
+                exit={{x: window.innerWidth, transition:{ duration: 0.4}}}
+                >
                 <Header />
                 <main>
                     <Banner />
@@ -24,7 +30,7 @@ function connect () {
                         </div>
                     </div>
                 </main>
-            </div>
+            </motion.div>
             <Footer />
         </React.Fragment>
     );

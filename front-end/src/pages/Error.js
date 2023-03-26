@@ -1,13 +1,10 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-
+import {motion} from 'framer-motion';
 import '../sass/pages/_error.scss';
-
-
 
 
 function Error () {
@@ -17,13 +14,18 @@ function Error () {
         navigate('/', {replace: true});
    }
     return (
-        <div className='parent'>
+        <motion.div
+            className='top-parent'
+            initial={{width: 0}}
+            animate={{width: '100%'}}
+            exit={{x: window.innerWidth, transition:{ duration: 0.3}}}
+            >
             <div className='content'>
                 <Header />
                 <main>
                     <Banner />
-                    <div className='top-parent__modifications'>
-                        <div className='main-error main-about'>
+                    <div className='main-error'>
+                        <div className='main-error__pages'>
                                 <h1>404</h1>
                                 <p>
                                     Oups! This is not the web page you are lookinf for.
@@ -36,7 +38,7 @@ function Error () {
                 </main>
             </div>
             <Footer />
-        </div>
+        </motion.div>
     );
 };
 

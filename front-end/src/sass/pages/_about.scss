@@ -10,25 +10,21 @@
            box-shadow: map-get($box-shadow, about);
         }
     }
-    .top-parent__modifications{
-        height: 100%;
-    }
     .main-about{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: justify;
+        height: 100%;
+        padding-bottom: nth($padding, 4);
+    }
+    .main-about__content{
         letter-spacing: 0.2rem;
-        margin-bottom: nth($margin, 4) + 10;
-
-            h2{
-                font-size: 24px;
-                margin: nth($margin, 3) 0;
-            }
-            p{
-                font-size: 16px;
-                width: 90%;
-            }
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+            margin: nth($margin, 3) 0;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            width: 90%;
+        }
     }
 }
