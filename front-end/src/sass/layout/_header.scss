@@ -11,22 +11,19 @@ header {
     @include ordi{
         padding: nth($padding, 4)+5;
     }
-
-    img {
-        object-fit: cover;
-        width: 25%;
-
-        @include tablet {
-            width: 20%;
+    & > a{
+        text-align: left;
+        img {
+            object-fit: cover;
+            width: 50%;
+            height: inherit;
         }
     }
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 90%;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 90%;
 
         @include tablet {
             width: 75%;
@@ -35,45 +32,45 @@ nav {
         @include ordi {
             width: 50%;
         }
-
-    & ul {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-            @include tablet{
-                width: 40%;
-            }
-        & > a{
-            padding-left: nth($padding, 4)+10;
-            @include ordi{
-                padding-left: nth($padding, 4)*2;
-            }
-        }
-        & li {
-            color: $fourth-color;
-            padding: nth($padding, 1) + 3;
-            transition: .2s;
-            letter-spacing: 1.3px;
-            background-color: $blue-gray;
-            @include shadow;
-            @include border-radius;
-            cursor: pointer;
-
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
                 @include tablet {
-                    padding: nth($padding, 2);
+                    width: 40%;
                 }
-            &:hover{
-                color: $black-color;
-                border-width: 2px;
-                box-shadow: map-get($box-shadow, header );
-                animation: pulse 1s infinite;
-                transition: .3s;
+            & > a {
+                padding-left: nth($padding, 4)+10;
+                @include ordi {
+                    padding-left: nth($padding, 4)*2;
+                }
+            }
+            & li {
+                color: $fourth-color;
+                padding: nth($padding, 1) + 3;
+                transition: .2s;
+                letter-spacing: 1.3px;
+                background-color: $blue-gray;
+                @include shadow;
+                @include border-radius;
+                cursor: pointer;
+                    @include tablet {
+                        padding: nth($padding, 2);
+                    }
+                &:hover {
+                    color: $black-color;
+                    border-width: 2px;
+                    box-shadow: map-get($box-shadow, header);
+                    animation: pulse 1s infinite;
+                    transition: .3s;
+                }
             }
         }
-    }
 
+    }
 }
+
 
 
 

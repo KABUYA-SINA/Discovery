@@ -3,11 +3,10 @@
 @import '../base/footer_typograpy';
 
 footer {
-    color: $blue-gray;
+    color: $fourth-color;
     text-align: center;
     padding: nth($padding, 4);
     @include box-shadow;
-
     & img {
         object-fit: cover;
         width: 19%;

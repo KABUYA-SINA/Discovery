@@ -1,4 +1,4 @@
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo.webp';
 import '../sass/layout/_footer.scss';
 
 const Footer = () => {

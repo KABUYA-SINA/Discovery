@@ -11,9 +11,9 @@ function connect () {
         <React.Fragment>
             <motion.div
                 className='connect'
-                initial={{width: 0}}
-                animate={{width: '100%'}}
-                exit={{x: window.innerWidth, transition:{ duration: 0.4}}}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                exit={{opacity: 0}}
                 >
                 <Header />
                 <main>

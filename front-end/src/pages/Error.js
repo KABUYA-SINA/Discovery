@@ -16,9 +16,9 @@ function Error () {
     return (
         <motion.div
             className='top-parent'
-            initial={{width: 0}}
-            animate={{width: '100%'}}
-            exit={{x: window.innerWidth, transition:{ duration: 0.3}}}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
             >
             <div className='content'>
                 <Header />
