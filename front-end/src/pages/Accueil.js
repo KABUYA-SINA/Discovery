@@ -20,7 +20,7 @@ function Accueil (){
                 className='container'
                 initial={{translateY: -50, opacity: 0}}
                 animate={{translateY: 0, opacity: 1}}
-                transition={{duration: .7, delay: .3, ease: "easeInOut" , translateY:{type: "spring",
+                transition={{duration: .3, ease: "easeInOut" , translateY:{type: "spring",
                     damping: 5,
                     stiffness: 50,
                     restSpeed: 0.5,
