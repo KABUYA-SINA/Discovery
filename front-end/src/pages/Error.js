@@ -16,9 +16,14 @@ function Error () {
     return (
         <motion.div
             className='top-parent'
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+            initial={{translateY: -50, opacity: 0}}
+            animate={{translateY: 0, opacity: 1}}
+            transition={{duration: .6, delay: .4, ease: "easeInOut" , translateY:{type: "spring",
+                damping: 5,
+                stiffness: 50,
+                restSpeed: 0.5,
+                restDelta: 0.001}}
+            }
             >
             <div className='content'>
                 <Header />

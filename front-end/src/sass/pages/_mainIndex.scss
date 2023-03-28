@@ -21,7 +21,7 @@
                 height: 100%;
                 width: 90%;
             }
-            @include ordi{
+            @include largeOrdi{
                 width: 60%;
             }
         img{
@@ -33,7 +33,7 @@
                 @include ordi{
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
-                    width: 30%;
+                    width: 40%;
                 }
         }
         & .childs{
@@ -58,9 +58,7 @@
                 @include ordi{
                     flex-direction: row;
                     align-items: flex-start;
-                    width: 50%;
                     height: 200px;
-                    gap: 20px;
                     border-radius: 0;
                     &:hover {
                         transform: scale(.92);
@@ -100,6 +98,9 @@
                         box-shadow: none;
                         text-align: left;
                         width: 90%;
+                        padding-top: nth($padding, 2);
+                    }
+                    @include largeOrdi{
                         padding-top: nth($padding, 4);
                     }
                 }
